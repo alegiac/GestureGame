@@ -1,0 +1,29 @@
+//
+//  Specs-Prefix.pch
+//  GestureGame
+//
+//  Created by Tim Clem on 3/28/14.
+//  Copyright (c) 2014 Alessandro Giacomella. All rights reserved.
+//
+
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+    #import "GestureGame-Environment.h"
+
+    #if HAS_POD(CocoaLumberjack)
+        #import <CocoaLumberjack/CocoaLumberjack.h>
+        static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+    #endif
+
+    #if HAS_POD(Specta)
+        #import <Specta/Specta.h>
+
+        #if HAS_POD(Expecta)
+            #define EXP_SHORTHAND
+            #import <Expecta/Expecta.h>
+        #endif
+    #endif
+#endif

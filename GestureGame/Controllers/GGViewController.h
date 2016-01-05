@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Alessandro Giacomella. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import iAd;
 
-@interface GGViewController : UIViewController
+@interface GGViewController : UIViewController <ADBannerViewDelegate>
 
 @end

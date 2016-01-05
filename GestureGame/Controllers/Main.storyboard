@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZPG-ZS-ETB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZPG-ZS-ETB">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,9 +17,24 @@
                     <view key="view" contentMode="scaleToFill" id="bIH-hW-8tY">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XoA-16-m37">
+                                <rect key="frame" x="25" y="18" width="533" height="471"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UfI-sx-StO" firstAttribute="top" secondItem="XoA-16-m37" secondAttribute="bottom" constant="111" id="bw7-qE-mFO"/>
+                            <constraint firstItem="XoA-16-m37" firstAttribute="leading" secondItem="bIH-hW-8tY" secondAttribute="leadingMargin" constant="5" id="eg0-lO-ABf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XoA-16-m37" secondAttribute="trailing" constant="22" id="j1J-To-cYI"/>
+                            <constraint firstItem="XoA-16-m37" firstAttribute="top" secondItem="bIH-hW-8tY" secondAttribute="topMargin" constant="18" id="y5T-g2-aFq"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bottomConstraint" destination="bw7-qE-mFO" id="shk-WQ-Els"/>
+                        <outlet property="contentView" destination="XoA-16-m37" id="2vL-Ac-8oq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ifc-37-EbH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -339,7 +339,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = GG;
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Alessandro Giacomella";
 				TargetAttributes = {
 					BDDB997218C3943B003EBC42 = {
@@ -594,6 +594,7 @@
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -825,6 +826,7 @@
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -20,6 +20,7 @@
 		BDDB996E18C3943B003EBC42 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDDB996D18C3943B003EBC42 /* Images.xcassets */; };
 		BDF68AF11B713C3400153C8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDF68AF01B713C3400153C8D /* Main.storyboard */; };
 		BDF68AF31B713C6200153C8D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDF68AF21B713C6200153C8D /* LaunchScreen.xib */; };
+		F8B44C3C1C4017D8006262FE /* GGGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B44C3B1C4017D8006262FE /* GGGameViewController.m */; };
 		F8D41B031C3E8ACC00506DC8 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D41B021C3E8ACC00506DC8 /* StoreKit.framework */; };
 		F8D41B061C3ED09900506DC8 /* levels.md in Sources */ = {isa = PBXBuildFile; fileRef = F8D41B051C3ED09900506DC8 /* levels.md */; };
 /* End PBXBuildFile section */
@@ -84,6 +85,8 @@
 		D5905E5F82BFFA7584BAD4C5 /* Pods-Specs.debug_production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs.debug_production.xcconfig"; path = "Pods/Target Support Files/Pods-Specs/Pods-Specs.debug_production.xcconfig"; sourceTree = "<group>"; };
 		D803149862748E9E696037FB /* Pods-Specs.adhoc_production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs.adhoc_production.xcconfig"; path = "Pods/Target Support Files/Pods-Specs/Pods-Specs.adhoc_production.xcconfig"; sourceTree = "<group>"; };
 		D854A3C5B42BB78F9F14DC65 /* Pods-Specs.profile_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs.profile_staging.xcconfig"; path = "Pods/Target Support Files/Pods-Specs/Pods-Specs.profile_staging.xcconfig"; sourceTree = "<group>"; };
+		F8B44C3A1C4017D8006262FE /* GGGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGGameViewController.h; sourceTree = "<group>"; };
+		F8B44C3B1C4017D8006262FE /* GGGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGGameViewController.m; sourceTree = "<group>"; };
 		F8D41B021C3E8ACC00506DC8 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		F8D41B051C3ED09900506DC8 /* levels.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = levels.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -221,6 +224,8 @@
 				BDF68AF01B713C3400153C8D /* Main.storyboard */,
 				BDDB996A18C3943B003EBC42 /* GGViewController.h */,
 				BDDB996B18C3943B003EBC42 /* GGViewController.m */,
+				F8B44C3A1C4017D8006262FE /* GGGameViewController.h */,
+				F8B44C3B1C4017D8006262FE /* GGGameViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -582,6 +587,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8B44C3C1C4017D8006262FE /* GGGameViewController.m in Sources */,
 				F8D41B061C3ED09900506DC8 /* levels.md in Sources */,
 				BD35136619BE274A00A19841 /* GGConstants.m in Sources */,
 				BDDB996318C3943B003EBC42 /* GGAppDelegate.m in Sources */,

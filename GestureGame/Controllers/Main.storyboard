@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZPG-ZS-ETB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ggr-b8-yc7">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -19,18 +19,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XoA-16-m37">
-                                <rect key="frame" x="25" y="18" width="533" height="471"/>
+                                <rect key="frame" x="-1" y="-2" width="602" height="523"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKC-gm-VuH">
+                                        <rect key="frame" x="278" y="247" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="9HR-CT-KLb" kind="show" id="C3m-Bh-l2d"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="kKC-gm-VuH" firstAttribute="centerY" secondItem="XoA-16-m37" secondAttribute="centerY" id="aJS-4h-7uv"/>
+                                    <constraint firstItem="kKC-gm-VuH" firstAttribute="centerX" secondItem="XoA-16-m37" secondAttribute="centerX" id="lJz-pj-EEl"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="UfI-sx-StO" firstAttribute="top" secondItem="XoA-16-m37" secondAttribute="bottom" constant="111" id="bw7-qE-mFO"/>
-                            <constraint firstItem="XoA-16-m37" firstAttribute="leading" secondItem="bIH-hW-8tY" secondAttribute="leadingMargin" constant="5" id="eg0-lO-ABf"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="XoA-16-m37" secondAttribute="trailing" constant="22" id="j1J-To-cYI"/>
-                            <constraint firstItem="XoA-16-m37" firstAttribute="top" secondItem="bIH-hW-8tY" secondAttribute="topMargin" constant="18" id="y5T-g2-aFq"/>
+                            <constraint firstItem="UfI-sx-StO" firstAttribute="top" secondItem="XoA-16-m37" secondAttribute="bottom" constant="79" id="bw7-qE-mFO"/>
+                            <constraint firstItem="XoA-16-m37" firstAttribute="leading" secondItem="bIH-hW-8tY" secondAttribute="leadingMargin" constant="-21" id="eg0-lO-ABf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XoA-16-m37" secondAttribute="trailing" constant="-21" id="j1J-To-cYI"/>
+                            <constraint firstItem="XoA-16-m37" firstAttribute="top" secondItem="bIH-hW-8tY" secondAttribute="topMargin" constant="-2" id="y5T-g2-aFq"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="pDU-8P-0Xo"/>
                     <connections>
                         <outlet property="bottomConstraint" destination="bw7-qE-mFO" id="shk-WQ-Els"/>
                         <outlet property="contentView" destination="XoA-16-m37" id="2vL-Ac-8oq"/>
@@ -38,7 +52,71 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ifc-37-EbH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="184" y="431"/>
+            <point key="canvasLocation" x="1564" y="-397"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="hf8-gF-rNb">
+            <objects>
+                <viewController id="9HR-CT-KLb" customClass="GGGameViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sX2-6H-Ciq"/>
+                        <viewControllerLayoutGuide type="bottom" id="ivW-ia-wP2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XQS-A1-Gmn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YP0-Ps-6Eg">
+                                <rect key="frame" x="176" y="119" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krs-81-RdA">
+                                <rect key="frame" x="550" y="34" width="31" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8h-fs-tVJ">
+                                <rect key="frame" x="14" y="30" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5Q-Hg-8sv">
+                                <rect key="frame" x="11" y="559" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cJc-ym-k68">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V8u-K0-Nhb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="845" y="433"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6W9-MS-Hrh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ggr-b8-yc7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hVX-wf-qaf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZPG-ZS-ETB" kind="relationship" relationship="rootViewController" id="zDu-WO-1qz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oSD-0t-UzW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="752" y="-397"/>
         </scene>
     </scenes>
 </document>
